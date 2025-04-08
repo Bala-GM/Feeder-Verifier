@@ -64,22 +64,18 @@ from openpyxl.utils.exceptions import InvalidFileException
 import psutil
 
 
-# Program B: FeederSetup: V-2.6.3 X
+# Program B: FeederSetup: V-2.6.3 X  Manipulator PY V-9.5.6 APR|07|04|2025 deprecated
 #def program_B():
-print("\033[92;40mFeederSetup & BOM Manipulator\033[0m \033[1;34;40mSYRMA\033[0m \033[1;36;40mSGS\033[0m \n\n\033[92;40mManipulator PY V-9.5.6 APR|07|04|2025 \033[0m")
-
-print("\033[1;36;40mPrograming Steps\033[0m \033[1;31;40mUnder Maintenance\033[0m")
-print("\n")
-print("\033[1;36;40mFeederSetup Verification\033[0m \033[1;31;40mUnder Maintenance\033[0m")
-print("\n")
-print("\033[92;40mB. FeederSetup: V-2.6.3-X \033[0m") #89P13
-
-time.sleep(5)
-
+print("\033[92;40mFeeder-Verfier PY TK V-1.0.1 APR|08|04|2025 \033[0m \033[1;34;40mSYRMA\033[0m \033[1;36;40mSGS\033[0m")
+print('\n')
+print("\033[92;40mB. FeederSetup: V-2.6.3-X \033[1;31;40mManipulator PY V-9.5.6 APR|07|04|2025 deprecated\033[0m") #89P13
+time.sleep(3)
+print('\n')
+print("BSD 2-Clause License Copyright (c) 2025, Bala Ganesh")
 print('\n')
 print("\033[32;4m*******Feeder and BOM data Verification Version--PY_V-2.6.3-X interface_TK/APR|07|04|2025-89P13*******\033[0m")
 print('\n')
-'''bil1 = pyfiglet.figlet_format("Version--PY-V1.5 interface_GUI/J0324", width = 300)print(bil1)'''
+time.sleep(3)
 
 # Get the current date and time
 current_datetime = datetime.now()
@@ -1900,7 +1896,7 @@ def append_to_excel(csv_file, excel_file):
 excel_file = 'CycleTime.xlsx'
 
 # List of CSV files
-csv_files = ['CycleTime_BL1.csv', 'CycleTime_TL1.csv', 'CycleTime_BL2.csv', 'CycleTime_TL2.csv', 'CycleTime_BL3.csv', 'CycleTime_TL3.csv', 'CycleTime_BL4.csv', 'CycleTime_TL4.csv', 'CycleTime_BL4C.csv', 'CycleTime_TL4C.csv']
+csv_files = ['CycleTime_BL1.csv', 'CycleTime_TL1.csv', 'CycleTime_BL2.csv', 'CycleTime_TL2.csv', 'CycleTime_BL3.csv', 'CycleTime_TL3.csv', 'CycleTime_BL5.csv', 'CycleTime_TL5.csv', 'CycleTime_BL4C.csv', 'CycleTime_TL4C.csv']
 
 # Filter out the CSV files that exist in the CycleTime folder
 existing_csv_files = [os.path.join('D:/NX_BACKWORK/Feeder Setup_PROCESS/#Output/CycleTime', file) for file in csv_files if os.path.isfile(os.path.join('D:/NX_BACKWORK/Feeder Setup_PROCESS/#Output/CycleTime', file))]
@@ -9171,6 +9167,4 @@ else:
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 sys.exit() #FeederSetup X
 
-#pyinstaller -F -i SYRMA.ico Manipulator.py
-
-#pyinstaller -F --onefile --console --name Manipulator --icon=SYRMA.ico ProgramB.py
+#pyinstaller -F --onefile --console --name Feeder Verifier --icon=SYRMA.ico FeederVerfier.py
